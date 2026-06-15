@@ -49,7 +49,7 @@ def inject_css():
         }
 
         h1, h2, h3, h4 { font-family: 'Sora', sans-serif; color: #F5F7FA !important; letter-spacing: -0.01em; }
-        p, span, label, li, div { color: #F5F7FA; }
+        p, span, label, li,div { color: #F5F7FA; }
 
         /* Sidebar */
         section[data-testid="stSidebar"] {
@@ -141,6 +141,31 @@ def inject_css():
 
         .aos-muted { color:#AEB8CC !important; }
         .aos-section-title { font-family:'Sora',sans-serif; font-weight:800; color:#FFFFFF; font-size:1.15rem; margin:6px 0 4px; }
+       /* Main select box */
+div[data-baseweb="select"] > div {
+    background: #151B2B !important;
+}
+
+/* Dropdown popup */
+div[data-baseweb="popover"] {
+    background: #151B2B !important;
+}
+
+/* Menu container */
+ul[role="listbox"] {
+    background: #151B2B !important;
+}
+
+/* Options */
+li[role="option"] {
+    background: #151B2B !important;
+    color: #F5F7FA !important;
+}
+
+/* Hover */
+li[role="option"]:hover {
+    background: #1E2740 !important;
+}
         </style>
         """,
         unsafe_allow_html=True,
